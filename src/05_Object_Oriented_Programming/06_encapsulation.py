@@ -1,5 +1,7 @@
 class BankAccount:
     Bank_Name = "HDFC"
+
+    # In Python, private variable is __X
     def __init__(self, __acc_no, __balance, __pin):
         self.__acc_no = __acc_no
         self.__balance = __balance

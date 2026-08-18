@@ -28,3 +28,27 @@ employees = [employee_1, employee_2, employee_3]
 
 for employee in employees:
     employee.display_details()
+
+print("-" * 40)
+
+class irctc:
+
+    def __init__(self, user_id, password):
+        self.user_id = user_id
+        self.password = password
+
+    def login(self):
+        enter_userID = int(input("Enter User ID: "))
+
+        if enter_userID != self.user_id:
+            print("Incorrect User ID.")
+            return
+        enterPassword = input("Enter Password: ")
+
+        if enterPassword == self.password:
+            print("Login Successful")
+        else:
+            print("Incorrect Password")
+railway = irctc(7035, "Sanya@122528")
+
+railway.login()
